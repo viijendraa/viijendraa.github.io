@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px; /* Ensure there's space for the fixed footer */
+    background: #f0f4f8; /* Light grey-blue background */
+}
+
+header {
+    background: #2c3e50; /* Dark blue-grey background */
+    color: #ecf0f1; /* Light grey text color */
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Ensure positioning for the header image */
+}
+
+.header-image {
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: makes the image circular */
+    display: block;
+    margin: 0 auto 10px auto; /* Center image horizontally and add margin below */
+}
+
+header h1 {
+    margin: 10px 0 5px;
+    font-size: 2em; /* Larger font size for prominence */
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1.1em; /* Slightly larger font size for readability */
+}
+
+footer {
+    text-align: center;
+    background: #2c3e50; /* Dark blue-grey background */
+    color: #ecf0f1; /* Light grey text color */
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background: #ffffff; /* White background for sections */
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space between sections */
+}
+
+section h2 {
+    border-bottom: 2px solid #3498db; /* Bright blue border for section titles */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5em; /* Slightly larger font size for section titles */
+    color: #2c3e50; /* Dark blue-grey text color */
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Job and Project Styling */
+.job, .project {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #ecf0f1; /* Light grey background for job/project entries */
+    border-left: 5px solid #3498db; /* Bright blue border on the left */
+}
+
+.job h3, .project h3 {
+    margin-top: 0;
+    font-size: 1.2em; /* Larger font size for job/project titles */
+    color: #2c3e50; /* Dark blue-grey text color */
+}
+
+.job p, .project p {
+    margin: 5px 0;
+}
+
+/* Make employer names bold */
+.job p:first-of-type {
+    font-weight: bold;
+    color: #2c3e50; /* Dark blue-grey color for employer names */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-image {
+        width: 80px; /* Adjust size for smaller screens */
+        height: 80px;
+    }
+
+    section {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+}
